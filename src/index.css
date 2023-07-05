@@ -1,13 +1,154 @@
 body {
-  margin: 0;
+  background-color: #B64244;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  margin-top: 50px;
 }
+
+#quote-box {
+  max-width: 500px;
+  margin: 0 50px;
+  padding: 20px 50px;
+  background-color: #F2F7F8;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.quote-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.quote-content {
+  flex: 1;
+}
+
+#text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #B64244;
+}
+
+#author {
+  font-size: 18px;
+  font-style: italic;
+  text-align: end;
+  margin-bottom: 20px;
+  color: #9D837C;
+}
+
+.interac-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+
+}
+
+.button-container button {
+  background-color: #E68A83;
+  color: #F2F7F8;
+  border: none;
+  padding: 10px 20px;
+  /* margin-right: 30px; */
+  width: 150px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button-container button:hover {
+  background-color: #B64244;
+  color:#F2F7F8;
+}
+
+#saved-box {
+  width: 90%;
+  margin: 50px auto;
+  padding: 0 50px;
+}
+
+.saved-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.saved-header h1 {
+  color: #F4D56C;
+}
+
+.clear-button {
+  background-color: #E68A83;
+  color: #F2F7F8;
+  border: none;
+  padding: 10px 20px;
+  width: 100px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.clear-button:hover {
+  background-color: #F2F7F8;
+  color: #B64244;
+}
+
+.quote-content q {
+  font-size: 20px;
+  font-weight: bold;
+  color: #F2F7F8;
+}
+
+.quote-content p {
+  font-size: 16px;
+  font-style: italic;
+  text-align: end;
+  margin-bottom: 20px;
+  color: #E68A83;
+}
+
+.delete-button {
+  background-color: transparent;
+  color: #E68A83;
+  border: none;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  color: #F4D56C;
+}
+
+#footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(241, 241, 241, 0.8);
+  text-align: center;
+  font-style: italic;
+  color: #B64244;
+}
+
