@@ -78,7 +78,7 @@ const Main = () => {
           </div>
         </div>
       </div>
-      {isSaveBoxVisible && <Saved quote={savedQuotes} onDelete={handleDelete} onClear={handleClear}/>}
+      {isSaveBoxVisible && <Saved savedQuotes={savedQuotes} onDelete={handleDelete} onClear={handleClear}/>}
       <div id="footer">
         <p>Created By Tiffany Hu 2023</p>
       </div>
