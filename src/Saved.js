@@ -10,7 +10,7 @@ const Saved = (props) => {
                 <h1>Saved Quotes</h1>
                 <button className="clear-button" onClick={props.onClear}>Clear All</button>
             </div>
-            {props.quote.map((quote, index) => (
+            { props.quote && props.quote.map((quote, index) => (
                 <div className="quote-container" key={index}>
                     <div className="quote-content">
                         <q>{quote.content}</q>
