@@ -1,5 +1,5 @@
 {
-  "name": "RamdomQuote",
+  "name": "random-quote",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
